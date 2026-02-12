@@ -1,0 +1,28 @@
+{
+  "apiVersion": 3,
+  "name": "pp/multilang-video",
+  "title": "Multi-Lang Video",
+  "category": "media",
+  "icon": "video-alt3",
+  "description": "Embed a video with multiple language files and a language switcher (with optional preselect overlay).",
+  "keywords": ["video", "language", "multilingual", "captions", "overlay"],
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": []
+    },
+    "poster": { "type": "string", "default": "" },
+    "default": { "type": "string", "default": "" },
+    "ui": { "type": "string", "default": "buttons" },
+    "controls": { "type": "boolean", "default": true },
+    "muted": { "type": "boolean", "default": false },
+    "preload": { "type": "string", "default": "metadata" },
+    "width": { "type": "string", "default": "100%" },
+    "height": { "type": "string", "default": "" },
+    "require_select": { "type": "boolean", "default": false }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "ppmlv-block-editor"
+}
